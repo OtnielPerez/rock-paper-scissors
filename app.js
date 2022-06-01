@@ -57,4 +57,14 @@ const game = () =>{
     playerScore.textContent = pScore;
     computerScore.textContent = cScore;  
  };
+
+ const compareHands = (playerChoice, computerChoice) => {
+
+    const winner = document.querySelector(".winner");
+    //if the game is tie
+    if (playerChoice === computerChoice){
+        winner.textContent = "It's a tie";
+        return;
+    }
+ }
 }
